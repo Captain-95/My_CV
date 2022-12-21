@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.849);
+}
+.container-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.img{
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms;;
+}
+.img:hover img{
+    transform: scale(1.2);
+}
+img{
+    padding: 20px;
+    margin: 2px;
+}
+.bold_text{
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.simple_text{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: 500;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+    margin: 6px;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+.footer{
+    padding: 10px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.849);
+    font-size: 15px;
+    font-weight: 500;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inner_footer{
+    padding: 6px;
+    margin: 12px;
+    margin-top: 3px;
+}
+
+.inner_footer ul li{
+    list-style: none;
+}  
+.inner_footer ul{
+    display: flex;
+}
+
+#main_container{
+    display: grid;
+    /* grid-gap: 1rem; */
+    grid-template-areas:
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+}
+#navbar{
+    grid-area: navbar;
+}
+#section{
+    grid-area: section;
+}
+#aside{
+    grid-area: aside;
+}
+#footer{
+    grid-area: footer;
+}
+.section{
+    padding: 6px;
+    margin: 4px 8px;
+}
+.aside{
+    padding: 6px;
+    margin: 4px 8px;
+}
+
+.final_text{
+    padding: 6px;
+    margin: 14px;
+}
+.tech_list{
+    padding: 6px;
+    margin: 12px;
+}
+.list_title{
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: bold;
+}
+.icon{
+    padding: 16px;
+    margin: 10px;
+    color: aliceblue;
+    font-size: 48px;
+}
+.icon:hover{
+    text-shadow:2px 2px 4px #000000;
+}
+a i {
+    transition: all 0.3s linear;
+}
+
+a:hover i {
+    transform: scale(1.3);
+}
+.instagram:hover {
+    color: #e11d74;
+}
+
+.twitter:hover {
+    color: #00adb5;
+}
+
+.github:hover {
+    color: black;
+}
+
+.linkedin:hover {
+    color: #1c17a1;
+}
+.mail:hover{
+    color: rgba(221, 213, 202, 0.788);
+}
